@@ -95,7 +95,7 @@
   display: block;
   /* display: inline-block; */
   /* padding-bottom: 10px; */
-  color: var(--font_dark);
+  color: var(--font_white);
   padding: 50px 0 10px;
 }
 
@@ -125,6 +125,7 @@
   border: 1px solid #eee;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.06); */
   color: transparent;
+  /* background: transparent; */
 }
 
 .gform textarea {
@@ -149,9 +150,13 @@
 }
 
 .close {
+  font-size: 16px;
+  width: 100px;
   background: #8d496b;
   padding: 10px 20px;
   cursor: pointer;
+  margin: initial;
+  color: #fff;
 }
 
 /*----- dimm,modal----- */

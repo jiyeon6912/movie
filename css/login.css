@@ -61,7 +61,7 @@ p {
 
 label {
   display: block;
-  color: var(--font_dark);
+  color: var(--font_white);
   padding: 50px 0 10px;
 }
 
