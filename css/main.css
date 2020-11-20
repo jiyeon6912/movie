@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --font_white: #f8f9fa;
+  --font_dark: #9ea6ae;
+  --yellow_box: #fcc669;
+  --dark_bg: #171721;
+  --dark_box: #212529;
+  --dark_blue: #243055;
+  --gray_box: #495057;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--font_white);
+  background: var(--dark_bg);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrap {
+  /* background: var(--dark_bg); */
+}
+
+.container {
+  width: 92%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.go_top {
+  position: fixed;
+  right: 50px;
+  bottom: 130px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.5);
+  font-size: 24px; /* i클래스 별도 지정하지 않아도 부모요소 상속받음 */
+  color: var(--font_dark); /* i클래스 별도 지정하지 않아도 부모요소 상속받음 */
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 10000;
+}
+
+/* header */
+
+.head_fix {
+  position: fixed;
+  /* top: 0; 
+  left: 50%; */
+  z-index: 100;
+  width: 100%;
+  padding-top: 20px;
+  background: var(--dark_bg);
+  transition: all 0.5s; /*transition 일어나는 모든곳에 0.3s 적용됨.*/
+}
+
+.head_fix.active {
+  /* box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6); */
+  background: var(--dark_box);
+}
+
+.header {
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 70px; */
+  /* background: var(--dark_bg); */
+  /* background: chocolate; */
+  /* box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.25); */
+}
+
+.header a {
+  padding: 2px 3px 0px;
+  /* background: red; */
+}
+
+.logo img {
+  width: 230px;
+  height: 40px;
+  transition: all 0.5s;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  color: var(--font_dark);
+  /* background: blue; */
+}
+.nav a {
+  display: inline-block;
+  /* background: yellow; */
+  padding: 0 10px;
+  margin-left: 25px;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.nav a:hover {
+  color: var(--font_white);
+}
+
+.nav li img {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+}
+
+.nav li img:hover {
+  transform: scale(1.2);
+}
+
+.nav_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* search_box */
+.search_box {
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  /* background: red; */
+}
+
+.search_box input[type="text"] {
+  max-width: 970px;
+  width: 92%;
+  padding: 20px 80px;
+  background: var(--yellow_box);
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 25px;
+  /* color: red; */
+}
+
+.search_box input[type="text"]::placeholder {
+  font-size: 16px; /*input box 기본 font-size: 12px;이므로 변경*/
+  color: var(--font_dark);
+}
+
+.search_box input[type="text"]:focus::placeholder {
+  color: transparent;
+}
+
+.search_box i {
+  font-size: 30px;
+  width: 40px;
+  height: 70px;
+  padding: 0 20px;
+  color: var(--dark_bg);
+  font-weight: 900;
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  cursor: pointer;
+}
+
+/* slide banner */
+.m_banner {
+  position: relative;
+}
+
+.slide .item {
+  margin-top: 190px;
+  /* background: royalblue; */
+  height: 550px;
+  /* height: 55vh; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.slide .item_01 {
+  background-image: url(../images/home/banner_1.jpg);
+}
+
+.slide .item_02 {
+  background-image: url(../images/home/banner_2.jpg);
+}
+
+.slide .item_03 {
+  background-image: url(../images/home/banner_3.jpg);
+}
+
+.slide p {
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.item.item_01 p {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  /* background: red; */
+}
+
+.item.item_02 p {
+  /* background: red; */
+  position: absolute;
+  top: 10%;
+  left: 60%;
+}
+
+.item.item_03 p {
+  /* background: red; */
+  position: absolute;
+  top: 65%;
+  left: 10%;
+}
+
+/* h4  */
+h4 {
+  font-size: 27px;
+  font-weight: 700;
+  padding: 80px 0 20px;
+}
+
+/* music_nail */
+.music_nail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: red; */
+}
+
+.nail {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.music_nail dl dt a {
+  /* background: red; */
+}
+
+.dimm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.music_nail dl {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.music_nail dl dt {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  /* background: red; */
+}
+
+.music_nail dl dt:hover {
+  color: var(--font_dark);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.music_nail dl dd {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.music_nail dl dd:hover {
+  color: var(--font_dark);
+}
+
+.music_nail .nail:hover .dimm {
+  opacity: 1;
+}
+
+.music_nail .nail:hover dl {
+  bottom: 30px;
+}
+
+/* 
+.nail_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: red;
+} */
+
+.music_nail img {
+  width: 320px;
+  height: 320px;
+  /* border-radius: 10px; */
+}
+
+.music_nail img:hover {
+}
+
+.music_nail p {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* review_movie */
+
+.review_movie iframe {
+  width: 100%;
+  height: 600px;
+  /* height: 70vh; */
+}
+
+/* movie_qa accordion */
+.movie_qa {
+  min-height: 65vh;
+  /* background: red; */
+}
+
+.movie_qa h4 {
+  text-align: center;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion .content {
+  margin: 5px 20px;
+}
+
+.accordion .content h2 {
+  padding: 1.2rem;
+  font-size: 20px;
+  /* background: #4183b9; */
+  background: var(--dark_box);
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion .content h2::after {
+  font-family: "xeicon"; /*사용하는 특수문자가 있을때 font-family: ;를 지정해주어야함.*/
+  content: "\e9c5";
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.accordion .content.active h2::after {
+  content: "\e9c1"; /* 해당 h2를 클릭했을때 특수문자 + 에서 -으로 바꾸는 코드*/
+}
+
+.accordion .content .text {
+  margin-top: 2px;
+  padding: 0 20px;
+  background: var(--dark_box);
+  line-height: 1.6;
+  height: 0; /*글자가 사라지게 만듬*/
+  overflow: hidden; /*글자가 사라지게 만듬*/
+  transition: height 0.3s, padding 0.3s;
+}
+
+.accordion .content.active .text {
+  padding: 20px 20px;
+  height: 100px;
+}
+
+/* event_box */
+/* .event_box {
+  margin-top: 60px;
+  height: 500px;
+  background: var(--dark_blue);
+  padding-top: 10px;
+} */
+
+.event_inner {
+  background: var(--dark_blue);
+}
+.event_box img {
+  height: 300px;
+  /* height: 30vh; */
+  margin-bottom: 20px;
+}
+
+.event_sub h4 {
+  padding: initial;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.event_sub p {
+  padding: 10px 0 20px;
+  margin-left: 10px;
+}
+
+/* sns_box */
+.sns_box h4 {
+  padding: initial;
+}
+
+.sns_box {
+  padding: 30px 0;
+  background: var(--dark_box);
+  text-align: center;
+  margin: 50px 0;
+}
+
+.sns_icon {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* background: red; */
+  margin-top: 20px;
+}
+
+.sns_icon img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  /* height: 100px; */
+  background: var(--dark_box);
+  color: var(--font_dark);
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  /* background: red; */
+}
+
+.footer img {
+  /* display: block; */
+  width: 20px;
+  height: 18px;
+  padding: 0 7px;
+  /* background: yellow; */
+}
+
+.foot_phone,
+.foot_email {
+  display: flex;
+  /* background: red; */
+  padding: 10px 160px;
+}
+
+/* slick_custom */
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  transition: width 0.3s;
+}
+
+.slick-dots li.slick-active {
+  width: 30px;
+}
+
+.slick-dots li.slick-active button {
+  opacity: 0.8;
+}
+
+.slick-dots li button {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  opacity: 0.3;
+  border-radius: 20px;
+}
+
+.slick-dots li button:before {
+  display: none;
+}

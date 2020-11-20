@@ -1,0 +1,104 @@
+.header {
+  padding-top: 20px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0 100px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 25px;
+}
+
+.sns_login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.sns_login img {
+  width: 70px;
+  height: 70px;
+  padding: 0 5px;
+}
+
+.or_line {
+  font-size: 25px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 50px 0;
+  /* background: red; */
+}
+
+.or_line::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  /* width: 400px; */
+  width: 40%;
+  height: 1px;
+  background: var(--font_dark);
+}
+
+.or_line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  /* width: 400px; */
+  width: 40%;
+  height: 1px;
+  background: var(--font_dark);
+}
+
+label {
+  display: block;
+  color: var(--font_dark);
+  padding: 50px 0 10px;
+}
+
+input {
+  background: transparent;
+  padding: 10px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  /* box-sizing: border-box; */
+  border-bottom: 1px solid var(--font_dark);
+  font-size: 20px;
+  color: var(--font_white);
+}
+
+input::placeholder {
+  color: var(--font_dark);
+  font-size: 20px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+button {
+  width: 100%;
+  background: var(--gray_box);
+  color: var(--font_dark);
+  margin: 200px 0;
+  padding: 15px 0;
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--font_white);
+}
