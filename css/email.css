@@ -1,23 +1,23 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
-.container {
+/* .container {
   height: 100vh;
   display: flex;
-}
-
+} */
+/* 
 .left {
-  flex-basis: 460px; /*flex상태에서 크기를 고정시킬때 활용*/
+  flex-basis: 460px; flex상태에서 크기를 고정시킬때 활용
   height: 100%;
   background: #079992;
   padding: 40px;
   color: #f5fff7;
-}
+} */
 
-.left h1 {
+/* .left h1 {
   font-size: 60px;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
@@ -25,64 +25,106 @@
 
 .left p {
   color: #b63c9ba;
-}
+} */
 
-.right {
-  flex: 1; /*나머지 공간을 다쓴다.*/
-  height: 100%; /*container 부모요소의 높이가 지정되어 있으므로 height 100%지정가능함.*/
+/* .right {
+  flex: 1; 나머지 공간을 다쓴다.
+  height: 100%; container 부모요소의 높이가 지정되어 있으므로 height 100%지정가능함.
   display: flex;
-  align-items: center; /*세로기준 중앙정렬 세로축을 기준으로 내용이 가운데 정렬됨*/
-  justify-content: center; /*가로기준 중앙정렬, 양쪽정렬*/
-}
+  align-items: center; 세로기준 중앙정렬 세로축을 기준으로 내용이 가운데 정렬됨
+  justify-content: center; 가로기준 중앙정렬, 양쪽정렬
+} */
 
-.right .content {
+/* .right .content {
   display: flex;
   flex-direction: column;
-  width: 80%; /*너비크기가 줄어들때 전체 80% 비율을 유지*/
-  max-width: 460px; /*너비크기가 최대일때 460px을 넘지않는다.*/
+  width: 80%; 너비크기가 줄어들때 전체 80% 비율을 유지
+  max-width: 460px; 너비크기가 최대일때 460px을 넘지않는다.
   color: #3c8271;
-}
+} */
 
-.right .content h2 {
+/* .right .content h2 {
   font-size: 36px;
   color: #0c2461;
   margin-bottom: 46px;
+} */
+
+.header {
+  padding-top: 20px;
 }
 
+.email_title h4 {
+  text-align: center;
+  margin: 10px 0 30px;
+  /* background: red; */
+}
+
+.email_photo {
+  width: 100%;
+  /* height: 300px; */
+}
+
+.photo_extra {
+  width: 100%;
+  /* height: 100px; */
+  background: #243055;
+  margin-top: 5px;
+  padding: 10px 0;
+  line-height: 1.7;
+}
+
+.photo_extra h5 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.photo_extra p {
+  font-size: 20px;
+  margin-left: 5px;
+}
 .gform {
-  font-size: 18px;
-  font-weight: bold;
+  /* font-size: 20px; */
+  /* font-weight: bold; */
+  color: #9ea6ae;
+  padding: 100px 0;
+  /* background: red; */
 }
 
 .gform label {
-  display: inline-block;
-  padding-bottom: 10px;
+  display: block;
+  /* display: inline-block; */
+  /* padding-bottom: 10px; */
+  color: var(--font_dark);
+  padding: 50px 0 10px;
 }
 
 .gform input,
 .gform textarea {
   display: block;
   width: 100%;
-  padding: 18px;
-  font-size: 16px; /*input의 기본 font-size 는 12px이다*/
+  /* padding: 18px; */
+  font-size: 20px; /*input의 기본 font-size 는 12px이다*/
   margin-bottom: 30px;
-  border: 1px solid transparent;
-  background: #f2f7f3;
-  border-radius: 10px;
+  border: none;
+  background: transparent;
+  /* border-radius: 10px; */
   outline: none;
-  color: #99a9af;
+  color: #f8f9fa;
+  border-bottom: 1px solid var(--font_dark);
 }
 
 .gform input::placeholder,
 .gform textarea::placeholder {
-  color: #b5c5c5;
+  color: #9ea6ae;
 }
 
-.gform input:focus,
-.gform textarea:focus {
-  background: #ffff;
+.gform input:focus::placeholder,
+.gform textarea:focus::placeholder {
+  /* background: #ffff;
   border: 1px solid #eee;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06); */
+  color: transparent;
 }
 
 .gform textarea {
@@ -90,12 +132,20 @@
 }
 
 .btn {
-  background: #3c8271;
-  color: #fff;
-  padding: 12px 30px;
+  width: 100%;
+  background: var(--gray_box);
+  color: var(--font_dark);
+  margin: 100px 0;
+  padding: 15px 0;
+  font-size: 25px;
   border: none;
+  border-radius: 5px;
   outline: none;
   cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--font_white);
 }
 
 .close {
@@ -108,14 +158,17 @@
 .dimm {
   position: absolute;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  /* height: 100%; */
+  height: 100vh;
+  background: #495057;
+  opacity: 0.5;
   display: none;
 }
 
 .dimm i {
   font-size: 60px;
-  color: #fff;
+  /* color: #fff; */
+  color: #f8f9fa;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -154,6 +207,7 @@
 }
 
 .modal p {
+  color: #111;
   padding: 20px;
 }
 

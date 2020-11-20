@@ -36,7 +36,7 @@
          <li class="nav_item"><a href="./login.html"><img src="./images/accout.png" alt="마이페이지"></a><a href="./login.html"><p>마이페이지</p></a></li>
        </ul>
      </div> <!-- header end -->
- 
+     </div> <!-- head_fix end -->
      <div class="search_box container">
      
          <form>
@@ -44,7 +44,7 @@
           </form>
         
      </div> <!-- search_box end -->
-</div> <!-- head_fix end -->
+
      
 
     <div class="container">
@@ -180,12 +180,12 @@
           <!-- <div class="content"> -->
             <h2>영화줄거리는?</h2>
             <p class="content">영화 ‘Flipped’는 ‘홱 뒤집히다’라는 뜻이다. 
-              줄리는 어느 날 건넛집에 이사온 브라이스에게 첫눈에 반해(Flipped) 중학생이 될 때까지 따라다닌다. 
-              하지만 브라이스가 줄리의 관심과 애정을 거절하고, 
-              화가 난 줄리는 브라이스를 피해 다니기 시작한다.
-              그런데, 두 주인공의 상황이 홱 뒤집힌다. 
-              이제 잠잠해진 줄리를 흘끔거리며 신경 쓰는 건 브라이스의 몫이다. 
-              그러는 사이 점차 사랑의 의미를 깨닫고, 십 대들은 성장한다. </p>
+              7살 소녀 줄리는 어느 날 건넛집에 이사온 브라이스에게 첫눈에 반해(Flipped) 중학생이 될 때까지 따라다닌다. 
+              반면, 브라이스는 그런 줄리의 행동이 부담스러워 피해 다니기 바쁘다. 
+              결국 줄리의 관심과 애정을 매몰차게 거절하고, 그에 화가 난 줄리는 오히려 브라이스를 피해 다니기 시작한다.
+              그런데, 두 주인공의 상황이 홱 뒤집힌다. 이제 잠잠해진 줄리를 흘끔거리며 신경 쓰는 건 브라이스의 몫이다. 
+              영화는 서로 마음이 엇갈리는 줄리와 브라이스의 관점을 교차해 보여준다. 
+              그러는 사이 소녀와 소년은 점차 사랑의 의미를 깨닫고, 십 대들은 성장한다.  </p>
           <!-- </div> -->
 
           <!-- <div class="content"> -->
@@ -246,9 +246,12 @@
 
 
   <script>
+   
+
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
    // 헤더 스크립트 스크롤 움직일 때 head_fix 에 active 클래스토글됨.
    var headFix = $('.head_fix') //jquery header 클래스를 변수로 지정해 두었으므로 코딩을 간략하게 할 수 있음.
+   console.log(headFix)
       var goTop = $('.go_top')
 
       $(window).scroll(function () {
@@ -303,7 +306,7 @@
         }
       })
   </script>
-  <script src="./js/movie_qa.js"></script>
+  <!-- <script src="./js/movie_qa.js"></script> -->
   
 </body>
 </html>

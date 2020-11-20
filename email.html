@@ -14,17 +14,47 @@
     <!-- 탑 버튼 -->
       <div class="go_top"><i class="xi-arrow-up"></i></div>
   
-  
-  
       <div class="header container">
         <a href="./index.html" class="logo"><img src="./images/logo-white2.png" alt="Movie&music로고"></a>
        </div> <!-- header end -->
 
        <div class="container">
-         <h3>음악추천 메일 보내기</h3>
-         <img src="./images/home/banner_4.jpg" alt="풋터 배너이미지">
-         <h3>영화의감동은 음악으로 기억된다...</h3>
-         <p>좋아하는 영화음악이 있다면 추천해 주세요!  매달 3분씩 선정해서 영화예매권을 보내드립니다.</p>
+         <div class="email_title"><h4>음악추천 메일 보내기</h4></div>
+         <div class="email_photo"><img src="./images/home/banner_4.jpg" alt="음악추천메일 배너이미지"></div>
+         <div class="photo_extra">
+          <h5>영화의감동은 음악으로 기억된다...</h5>
+          <p>좋아하는 영화음악이 있다면 추천해 주세요!  매달 3분씩 선정해서 영화예매권을 보내드립니다.</p>
+         </div>
+        
+         <form class="gform"
+         method="POST" 
+         data-email="example@email.net" 
+         action="https://script.google.com/macros/s/AKfycbyHVUkfvgbzUnHLWHV-UWZD_pvlLLFT_ZQnPADszA/exec">
+           <label for="name">이름</label>
+           <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+           <label for="email">이메일</label>
+           <input type="email" id="email" name="email" placeholder="이메일을 입력하세요">
+           <label for="message">추천 영화음악 내용 (연락처)</label>
+           <textarea 
+           name="message" 
+           id="message" 
+           cols="30" 
+           rows="10" 
+           placeholder="추천하는 영화음악의 영화제목과 곡명을 적어주세요"></textarea>
+ 
+           <button type="submit" class="btn">보내기</button><!--input옆에 보내기는 button을 활용 -->
+         </form>
+
+           <!-- dim -->
+    <div class="dimm">
+      <i class="xi-spinner-5 xi-spin"></i>
+        </div>
+       <!-- modal 키보드 windowkey+ .(점) 하면 이모티콘 이미지 나옴-->
+       <div class="modal">
+         <span>😍</span>  
+         <p>메일이 성공적으로 발송되었습니다.<br> 빠른 답장드리겠습니다. 감사합니다!^^</p>
+         <button class="btn close">닫기</button>
+       </div>
 
        </div> <!-- container end -->
 
@@ -45,7 +75,12 @@
 
   </div> <!-- wrap end -->
 
-  
+  <script>
+      var btn = $('.btn')
+      btn.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
+  </script>
 
   <script src="./js/email.js"></script>
 </body>
