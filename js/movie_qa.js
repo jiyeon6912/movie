@@ -11,19 +11,4 @@ for(let i=0; i < content.length; i++) {
 }
 
 
-// var title = $('.content h2')
-// console.log(title)
-// title.eq(0).addClass('active').next().slideDown() //초기화 accordion 박스가 열린상태에서 시작
-// title.click(function(){
-//   var content = $(this).next()
-//   console.log(content)
-
-//   $(this).parent('.content').find(div).not(text).slideUp()
-//   text.slideToggle()
-
-//   if($(this).hasClass('active')) {
-//     $(this).removeClass('active')
-//   } else {
-//     $(this).addClass('active')
-//   }
-// })
+  
