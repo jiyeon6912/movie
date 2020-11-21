@@ -36,7 +36,22 @@
          <li class="nav_item"><a href="./login.html"><img src="./images/accout.png" alt="마이페이지"></a><a href="./login.html"><p>마이페이지</p></a></li>
        </ul>
      </div> <!-- header end -->
-     </div> <!-- head_fix end -->
+  </div> <!-- head_fix end -->
+
+  <div class="head_fix2" >
+    <div class="header container">
+      <a href="./index.html" class="logo"><img src="./images/logo-white2.png" alt="Movie&music로고"></a>
+
+       <ul class="nav2">
+         <li><a href="./index.html"><img src="./images/home.png" alt="홈"></a></li>
+         <li><a href="#"><img src="./images/music.png" alt="영화음악검색"></a></li>
+         <li><a href="./email.html"><img src="./images/email.png" alt="영화음악추천메일"></a></li>
+         <li><a href="./login.html"><img src="./images/accout.png" alt="마이페이지"></a></li>
+       </ul>
+     </div> <!-- header end -->
+  </div> <!-- head_fix2 end -->
+
+
      <div class="search_box container">
      
          <form>
@@ -267,6 +282,17 @@
           goTop.fadeIn()
         } else {
           goTop.fadeOut()
+        }
+      })
+      
+    //nav clone----------------------------------------
+      var scrollValue = headFix.outerHeight() + 40
+      var headFix2 = $('.head_fix2')
+      $(window).on('scroll', function () {
+        if ($(this).scrollTop() >= scrollValue) {
+          headFix2.addClass('show')
+        } else {
+          headFix2.removeClass('show')
         }
       })
 
