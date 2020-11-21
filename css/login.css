@@ -75,6 +75,7 @@ input {
   border-bottom: 1px solid var(--font_dark);
   font-size: 20px;
   color: var(--font_white);
+  line-height: 1.7;
 }
 
 input::placeholder {
