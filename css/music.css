@@ -17,18 +17,18 @@
   border-radius: 5px;
 }
 
-.list {
+.item {
   background: var(--dark_box);
   padding-bottom: 10px;
   margin-bottom: 30px;
   border-radius: 5px;
 }
 
-.list p {
+.item p {
   padding: 5px 0 5px 5px;
 }
 
-.list span {
+.item span {
   color: #20b477;
 }
 

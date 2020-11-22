@@ -74,53 +74,53 @@
         </div>
 
         <div class="list_item">
-          <div class="list item_1">
-            <a href="#"><img src="./images/home/nail-1.jpg" alt="언어의정원"></a>
-            <p>언어의정원</p>
-            <p><span>Rain</span></p>
+          <!-- <div class="item item_1">
+            <a href="#"><img id="poster" src="./images/home/nail-1.jpg" alt="언어의정원"></a>
+            <p id="title">언어의정원</p>
+            <p id="music"><span>Rain</span></p>
           </div>
   
-          <div class="list item_2">
+          <div class="item item_2">
             <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
             <p>아이언맨3</p>
             <p><span>Blue(Da Ba Dee)</span></p>
           </div>
   
-          <div class="list item_3">
+          <div class="item item_3">
             <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
             <p>분노의질주</p>
             <p><span>Time in a Bottle</span> </p>
           </div>
           
-        <div class="list item_4">
+        <div class="item item_4">
           <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
           <p>중경삼림</p>
           <p><span>(California Dreaming)</span></p>
         </div>
 
-        <div class="list item_5">
+        <div class="item item_5">
           <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
           <p>아이언맨3</p>
           <p><span>Blue(Da Ba Dee)</span></p>
         </div>
 
-        <div class="list item_6">
+        <div class="item item_6">
           <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
           <p>분노의질주</p>
           <p><span>Time in a Bottle</span> </p>
         </div>
         
-      <div class="list item_7">
+      <div class="item item_7">
         <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
         <p>중경삼림</p>
         <p><span>(California Dreaming)</span></p>
       </div>
 
-      <div class="list item_8">
+      <div class="item item_8">
         <a href="#"><img src="./images/home/nail-1.jpg" alt="언어의정원"></a>
         <p>언어의정원</p>
         <p><span>Rain</span></p>
-      </div>
+      </div> -->
 
         </div> <!-- list_item end-->
       </div> <!-- music_list end-->
@@ -147,7 +147,6 @@
 
   <script>
    
-
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
    // 헤더 스크립트 스크롤 움직일 때 head_fix 에 active 클래스토글됨.
    var headFix = $('.head_fix') //jquery header 클래스를 변수로 지정해 두었으므로 코딩을 간략하게 할 수 있음.
@@ -169,7 +168,12 @@
           goTop.fadeOut()
         }
       })
+
+      goTop.click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 400)
+      })
       
+
     //nav clone----------------------------------------
       var scrollValue = headFix.outerHeight() + 40
       var headFix2 = $('.head_fix2')
@@ -181,43 +185,8 @@
         }
       })
 
-      goTop.click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 400)
-      })
-
-      //배너 슬라이드
-   $('.slide').slick({
-     dots: true,  //banner 이동버튼
-     autoplay: true,
-     speed: 4000, //넘어갈때 속도
-     autoplaySpeed: 2000,
-     fade: true,
-    //  arrow:true,
-     prevArrow: $('.prev_btn'),
-     nextArrow: $('.next_btn')
-   })
-
-   //auto_accordion 2  열림아이콘 토글오류남!! 고민하기!!
-
-   var title = $('.accordion h2')
-      title.next().slideUp()  
-      // title.eq(0).addClass('active').next().slideUp() 
-
-      // title.eq(0).addClass('active').next().slideDown() //초기화 accordion 박스가 열린상태에서 시작
-      title.click(function(){
-        var content = $(this).next()
-
-        $(this).parent('.accordion').find('p').not(content).slideUp()
-        content.slideToggle()
-
-        if($(this).hasClass('active')) {
-          $(this).removeClass('active')
-        } else {
-          $(this).addClass('active')
-        }
-      })
+   
   </script>
-  <!-- <script src="./js/movie_qa.js"></script> -->
-  
+  <script src="./js/music_list.js"></script>  
 </body>
 </html>
