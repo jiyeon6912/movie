@@ -324,13 +324,18 @@
 
         $(this).parent('.accordion').find('p').not(content).slideUp()
         content.slideToggle()
+        
+       
 
         if($(this).hasClass('active')) {
           $(this).removeClass('active')
         } else {
           $(this).addClass('active')
         }
+        
+    
       })
+
   </script>
   <!-- <script src="./js/movie_qa.js"></script> -->  
 </body>
