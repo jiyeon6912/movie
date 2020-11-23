@@ -30,7 +30,7 @@
          <!-- <li><a href="#"><img src="./images/home.png" alt="홈이미지">홈</li></a> -->
          <li class="nav_item"><a href="./index.html"><img src="./images/home.png" alt="홈이미지"></a><a href="./index.html"><p>홈</p></a></li>
          <!-- <li><a href="#"><img src="./images/music.png" alt="영화음악검색" class="m">영화음악검색</li></a> -->
-         <li class="nav_item"><a href="#"><img src="./images/music.png" alt=""></a><a href="#"><p>영화음악검색</p></a></li>
+         <li class="nav_item"><a href="#"><img src="./images/music.png" alt="영화음악검색"></a><a href="./music.html"><p>영화음악검색</p></a></li>
          <!-- <li><a href="#"><img src="./images/email.png" alt="영화음악메일보내기">영화음악추천하기</li></a> -->
          <li class="nav_item"><a href="./email.html"><img src="./images/email.png" alt="영화음악메일보내기"></a><a href="./email.html"><p>영화음악추천하기</p></a></li>
          <!-- <li><a href="#"><img src="./images/accout.png" alt="마이페이지">마이페이지</li></a> -->
@@ -45,7 +45,7 @@
 
        <ul class="nav2">
          <li><a href="./index.html"><img src="./images/home.png" alt="홈"></a></li>
-         <li><a href="#"><img src="./images/music.png" alt="영화음악검색"></a></li>
+         <li><a href="./music.html"><img src="./images/music.png" alt="영화음악검색"></a></li>
          <li><a href="./email.html"><img src="./images/email.png" alt="영화음악추천메일"></a></li>
          <li><a href="./login.html"><img src="./images/accout.png" alt="마이페이지"></a></li>
        </ul>
@@ -75,7 +75,7 @@
 
         <div class="list_item">
           <div class="item" data-item="ani">
-            <a href="#"><img id="poster" src="./images/home/nail-1.jpg" alt="언어의정원"></a>
+            <a href="./music_detail.html"><img id="poster" src="./images/home/nail-1.jpg" alt="언어의정원"></a>
             <p id="title">언어의정원</p>
             <p id="music"><span>Rain</span></p>
           </div>
@@ -145,6 +145,7 @@
   </div> <!-- wrap end -->
 
   <script src="./js/music_list.js"></script>  
+  <script src="./js/music.js"></script>
   <script>
    
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
@@ -190,8 +191,8 @@
       var btns = $('.filter_btns button')
       var Item = $('.list_item .item')
 
-      console.log(Item)
-      console.log('연결확인!')
+      // console.log(Item)
+      // console.log('연결확인!')
 
       btns.on('click', function (e) {
         var categori = e.currentTarget.dataset.id
@@ -208,6 +209,18 @@
       btnOn.removeClass('on')
       $(this).addClass('on')
       })
+
+
+      //------------------------------
+      var detail = $('.list_item .item')
+      detail.on('click',function(){
+        // console.log(e)
+        
+        console.log($(this))
+      })
+    
+      
+
    
   </script>
   

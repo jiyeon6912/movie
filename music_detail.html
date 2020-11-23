@@ -31,7 +31,7 @@
          <!-- <li><a href="#"><img src="./images/home.png" alt="홈이미지">홈</li></a> -->
          <li class="nav_item"><a href="./index.html"><img src="./images/home.png" alt="홈이미지"></a><a href="./index.html"><p>홈</p></a></li>
          <!-- <li><a href="#"><img src="./images/music.png" alt="영화음악검색" class="m">영화음악검색</li></a> -->
-         <li class="nav_item"><a href="#"><img src="./images/music.png" alt=""></a><a href="#"><p>영화음악검색</p></a></li>
+         <li class="nav_item"><a href="./music.html"><img src="./images/music.png" alt="영화음악검색"></a><a href="./music.html"><p>영화음악검색</p></a></li>
          <!-- <li><a href="#"><img src="./images/email.png" alt="영화음악메일보내기">영화음악추천하기</li></a> -->
          <li class="nav_item"><a href="./email.html"><img src="./images/email.png" alt="영화음악메일보내기"></a><a href="./email.html"><p>영화음악추천하기</p></a></li>
          <!-- <li><a href="#"><img src="./images/accout.png" alt="마이페이지">마이페이지</li></a> -->
@@ -46,7 +46,7 @@
 
        <ul class="nav2">
          <li><a href="./index.html"><img src="./images/home.png" alt="홈"></a></li>
-         <li><a href="#"><img src="./images/music.png" alt="영화음악검색"></a></li>
+         <li><a href="./music.html"><img src="./images/music.png" alt="영화음악검색"></a></li>
          <li><a href="./email.html"><img src="./images/email.png" alt="영화음악추천메일"></a></li>
          <li><a href="./login.html"><img src="./images/accout.png" alt="마이페이지"></a></li>
        </ul>
@@ -55,19 +55,20 @@
 
     <div class="container">
 
-      <div class="youtube_box">
-        <iframe src="https://www.youtube.com/embed/k5wU_LjI3Do" frameborder="0"></iframe>
-        <h4>중경삼림</h4>
-        <p>(California Dreaming)</p>
-      </div>
-
-      <div class="content">
-        <p>영화감독</p>
-        <p>영화줄거리</p>
-      </div>
-      
-      
-
+      <div class="music_detail_box">
+        <div class="youtube_box">
+          <iframe src="https://www.youtube.com/embed/k5wU_LjI3Do" frameborder="0"></iframe>
+          <h4><span>영화제목: </span>중경삼림</h4>
+          <p><span>영화음악: </span>California Dreaming</p>
+        </div>
+  
+        <div class="content">
+          <p><span>영화감독: </span>왕가위</p>
+          <p>작품정보:</p>
+          <p>간략한 영화 설명</p>
+        </div>
+      </div> <!-- music_detail_box end -->
+       
     </div> <!-- container end -->
 
       <div class="footer">
@@ -88,6 +89,8 @@
   </div> <!-- wrap end -->
 
   <script src="./js/music_list.js"></script>  
+  <script src="./js/music_detail.js"></script>
+
   <script>
    
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
