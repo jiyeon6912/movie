@@ -51,3 +51,16 @@
   border-radius: 5px;
   margin-bottom: 10px;
 }
+
+.list_item .item {
+  transition: all 0.5s;
+}
+
+.list_item .item:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+}
+
+.list_item .item:hover img {
+  opacity: 0.5;
+}
