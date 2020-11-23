@@ -14,7 +14,13 @@
   font-weight: 900;
   background: var(--gray_box);
   border: none;
-  border-radius: 5px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.filter_btns button.on {
+  background: var(--font_white);
+  color: var(--dark_bg);
 }
 
 .item {

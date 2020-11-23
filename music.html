@@ -68,55 +68,55 @@
        <div class="music_list">
        
         <div class="filter_btns">
-          <button>모두보기</button>
-          <button>영화</button>
-          <button>애니메이션</button>
+          <button data-id="all" class="on">모두보기</button>
+          <button data-id="movie">영화</button>
+          <button data-id="ani">애니메이션</button>
         </div>
 
         <div class="list_item">
-          <!-- <div class="item item_1">
+          <div class="item" data-item="ani">
             <a href="#"><img id="poster" src="./images/home/nail-1.jpg" alt="언어의정원"></a>
             <p id="title">언어의정원</p>
             <p id="music"><span>Rain</span></p>
           </div>
   
-          <div class="item item_2">
+          <!-- <div class="item item_2">
             <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
             <p>아이언맨3</p>
             <p><span>Blue(Da Ba Dee)</span></p>
-          </div>
+          </div> -->
   
-          <div class="item item_3">
+          <!-- <div class="item item_3">
             <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
             <p>분노의질주</p>
             <p><span>Time in a Bottle</span> </p>
-          </div>
+          </div> -->
           
-        <div class="item item_4">
+        <!-- <div class="item item_4">
           <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
           <p>중경삼림</p>
           <p><span>(California Dreaming)</span></p>
-        </div>
+        </div> -->
 
-        <div class="item item_5">
+        <!-- <div class="item item_5">
           <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
           <p>아이언맨3</p>
           <p><span>Blue(Da Ba Dee)</span></p>
-        </div>
+        </div> -->
 
-        <div class="item item_6">
+        <!-- <div class="item item_6">
           <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
           <p>분노의질주</p>
           <p><span>Time in a Bottle</span> </p>
-        </div>
-        
+        </div> -->
+<!--         
       <div class="item item_7">
         <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
         <p>중경삼림</p>
         <p><span>(California Dreaming)</span></p>
-      </div>
+      </div> -->
 
-      <div class="item item_8">
+      <!-- <div class="item item_8">
         <a href="#"><img src="./images/home/nail-1.jpg" alt="언어의정원"></a>
         <p>언어의정원</p>
         <p><span>Rain</span></p>
@@ -144,7 +144,7 @@
 
   </div> <!-- wrap end -->
 
-
+  <script src="./js/music_list.js"></script>  
   <script>
    
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
@@ -185,8 +185,31 @@
         }
       })
 
+
+      //button filtering--------------------------
+      var btns = $('.filter_btns button')
+      var Item = $('.list_item .item')
+
+      console.log(Item)
+      console.log('연결확인!')
+
+      btns.on('click', function (e) {
+        var categori = e.currentTarget.dataset.id
+
+        if (categori === 'all') {
+          Item.fadeIn()
+        } else {
+          Item.hide().filter('[data-item=' + categori + ']').slideDown()
+          // .show().fadeIn() 다양한 방식으로 보여줄 수 있다.
+        }
+
+        //버튼 클릭시 버튼에 색지정하는 코드-------------------
+      var btnOn = $('.filter_btns').find('button') 
+      btnOn.removeClass('on')
+      $(this).addClass('on')
+      })
    
   </script>
-  <script src="./js/music_list.js"></script>  
+  
 </body>
 </html>
