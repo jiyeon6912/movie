@@ -16,7 +16,7 @@ function showList(index) {
   let newItem = ''
   items.map(item => {
     newItem += `<div class="item" data-item=${item.dataitem}>
-            <a href="#"><img id="poster" src=${item.poster} alt="언어의정원"></a>
+            <a class="popup-youtube" href="${item.youtube}"><img id="poster" src=${item.poster} alt="${item.title}"></a>
             <p id="title">${item.title}</p>
             <p id="music"><span>${item.music}</span></p>
           </div>`
