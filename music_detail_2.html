@@ -9,13 +9,11 @@
   <link
     rel="stylesheet"
     href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    <link rel="stylesheet" href="./js/magnific-popup.css" />
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="./js/jquery.magnific-popup.min.js"></script>
- 
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/music.css">
+  <link rel="stylesheet" href="./css/music_detail.css">
   <title>Home-Movie&music</title>
 </head>
 <body>
@@ -33,7 +31,7 @@
          <!-- <li><a href="#"><img src="./images/home.png" alt="홈이미지">홈</li></a> -->
          <li class="nav_item"><a href="./index.html"><img src="./images/home.png" alt="홈이미지"></a><a href="./index.html"><p>홈</p></a></li>
          <!-- <li><a href="#"><img src="./images/music.png" alt="영화음악검색" class="m">영화음악검색</li></a> -->
-         <li class="nav_item"><a href="#"><img src="./images/music.png" alt="영화음악검색"></a><a href="./music.html"><p>영화음악검색</p></a></li>
+         <li class="nav_item"><a href="./music.html"><img src="./images/music.png" alt="영화음악검색"></a><a href="./music.html"><p>영화음악검색</p></a></li>
          <!-- <li><a href="#"><img src="./images/email.png" alt="영화음악메일보내기">영화음악추천하기</li></a> -->
          <li class="nav_item"><a href="./email.html"><img src="./images/email.png" alt="영화음악메일보내기"></a><a href="./email.html"><p>영화음악추천하기</p></a></li>
          <!-- <li><a href="#"><img src="./images/accout.png" alt="마이페이지">마이페이지</li></a> -->
@@ -55,79 +53,30 @@
      </div> <!-- header end -->
   </div> <!-- head_fix2 end -->
 
-
-     <div class="search_box container">
-     
-         <form>
-           <label><i class="xi-search"></i><input type="text" placeholder="영화제목, 영화음악을 검색하세요"></label>
-          </form>
-        
-     </div> <!-- search_box end -->
-
-     
-
     <div class="container">
-      
-       <div class="music_list">
-       
-        <div class="filter_btns">
-          <button data-id="all" class="on">모두보기</button>
-          <button data-id="movie">영화</button>
-          <button data-id="ani">애니메이션</button>
-        </div>
 
-        <div class="list_item">
-          <div class="item" data-item="ani">
-            <a class="popup-youtube" href="https://www.youtube.com/embed/Dz_4XIBCg5c"><img id="poster" src="./images/home/nail-1.jpg" alt="언어의정원"></a>
-            <p id="title">언어의정원</p>
-            <p id="music"><span>Rain</span></p>
-          </div>
-  
-          <!-- <div class="item item_2">
-            <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
-            <p>아이언맨3</p>
-            <p><span>Blue(Da Ba Dee)</span></p>
-          </div> -->
-  
-          <!-- <div class="item item_3">
-            <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
-            <p>분노의질주</p>
-            <p><span>Time in a Bottle</span> </p>
-          </div> -->
+      <div class="music_detail_box">
+        <div class="youtube_box">
+          <!-- <iframe src="https://www.youtube.com/embed/UTJbCQATrgI" frameborder="0"></iframe> -->
+          <iframe width="1000" height="651" src="https://www.youtube.com/embed/UTJbCQATrgI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- <iframe width="1000" height="651" src="https://www.youtube.com/embed/eW0Glxi30C0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           
-        <!-- <div class="item item_4">
-          <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
-          <p>중경삼림</p>
-          <p><span>(California Dreaming)</span></p>
-        </div> -->
+          <h4><span>영화제목: </span>별을 쫓는 아이, 아가르타의 전설 (2011)</h4>
+          <p><span>영화음악: </span>
+            Hello Goodbye & Hello (For Movie）</p>
+          </div>
 
-        <!-- <div class="item item_5">
-          <a href="#"><img src="./images/home/nail-2.jpg" alt="아이언맨3"></a>
-          <p>아이언맨3</p>
-          <p><span>Blue(Da Ba Dee)</span></p>
-        </div> -->
-
-        <!-- <div class="item item_6">
-          <a href="#"><img src="./images/home/nail-3.jpg" alt="분노의질주"></a>
-          <p>분노의질주</p>
-          <p><span>Time in a Bottle</span> </p>
-        </div> -->
-<!--         
-      <div class="item item_7">
-        <a href="#"><img src="./images/gc.jpg" alt="중경삼림"></a>
-        <p>중경삼림</p>
-        <p><span>(California Dreaming)</span></p>
-      </div> -->
-
-      <!-- <div class="item item_8">
-        <a href="#"><img src="./images/home/nail-1.jpg" alt="언어의정원"></a>
-        <p>언어의정원</p>
-        <p><span>Rain</span></p>
-      </div> -->
-
-        </div> <!-- list_item end-->
-      </div> <!-- music_list end-->
-
+          <div class="content">
+          <p><span>영화감독: </span>신카이 마코토</p>
+          <p>작품정보:</p>
+          <p>
+            주인공은 10대 초반의 어린 소녀 '아스나'의 눈을 통해 모험, 액션, 사랑을 그리고 있다. 
+            신카이 감독은 이 작품이 자신의 과거 작품(별의 목소리에서 초속 5센티미터까지)에서 주로 그린 주제인 '상실'뿐 아니라 
+            무언가를 상실한 사람이 어떻게 살아가야 하는지에 대한 문제 의식을 생각하는 작품이 될 것이라고 밝힌 바 있다.
+            영화음악 Hello Goodbye & Hello은 죽은 자신의 소중한 사람을 되살리려고 지하세계로 들어가는 어느 소녀이야기의 엔딩곡이다.</p>
+          </div>
+      </div> <!-- music_detail_box end -->
+       
     </div> <!-- container end -->
 
       <div class="footer">
@@ -148,7 +97,8 @@
   </div> <!-- wrap end -->
 
   <script src="./js/music_list.js"></script>  
-  <script src="./js/music.js"></script>
+  <script src="./js/music_detail.js"></script>
+
   <script>
    
       //헤더 스크립트 go_top;스크롤 값 900초과일때 나타남
@@ -190,44 +140,7 @@
       })
 
 
-      //button filtering--------------------------
-      var btns = $('.filter_btns button')
-      var Item = $('.list_item .item')
-
-      // console.log(Item)
-      // console.log('연결확인!')
-
-      btns.on('click', function (e) {
-        var categori = e.currentTarget.dataset.id
-
-        if (categori === 'all') {
-          Item.fadeIn()
-        } else {
-          Item.hide().filter('[data-item=' + categori + ']').slideDown()
-          // .show().fadeIn() 다양한 방식으로 보여줄 수 있다.
-        }
-
-        //버튼 클릭시 버튼에 색지정하는 코드-------------------
-      var btnOn = $('.filter_btns').find('button') 
-      btnOn.removeClass('on')
-      $(this).addClass('on')
-      })
-
-
-      //유튜브 magnific-Popup을 위해서 필요한 스크립트를 삽입해야함. js폴더에 magnific 관련 2개의 파일이 저장되어 있어야 함.-------
-    
-      $(document).ready(function() {
-	    $('.popup-youtube').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-
-		fixedContentPos: false
-	});
-});
-
+      
    
   </script>
   

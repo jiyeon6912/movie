@@ -16,7 +16,7 @@ function showList(index) {
   let newItem = ''
   items.map(item => {
     newItem += `<div class="item" data-item=${item.dataitem}>
-            <a class="popup-youtube" href="${item.youtube}"><img id="poster" src=${item.poster} alt="${item.title}"></a>
+            <a class="popup-youtube" href=${item.youtube}><img id="poster" src=${item.poster} alt=${item.title}></a>
             <p id="title">${item.title}</p>
             <p id="music"><span>${item.music}</span></p>
           </div>`
@@ -26,7 +26,7 @@ function showList(index) {
 }
 //----------------------------------------------
 console.log('시작!')
-console.log(items)
+console.log(listItem)
 //  items.addEventListener('click',function(){
 //    console.log('클릭!')
 //  })
