@@ -24,7 +24,7 @@
     director: '데이비드 리치',
     music: 'Time in a bottle - Bs.YUNGBLUD ',
     poster: './images/home/nail-3.jpg',
-    youtube: 'https://www.youtube.com/embed/iv-1PMbVI78',
+    youtube: 'http://www.youtube.com/watch?v=iv-1PMbVI78',
     text:
       '분노의 질주 시리즈의 첫 스핀오프 영화이며, 데커드 쇼와 루크 홉스의 팀업 영화이다.'
   },
@@ -55,7 +55,7 @@
     director: '데이비드 리치',
     music: 'Time in a bottle - Bs.YUNGBLUD ',
     poster: './images/home/nail-3.jpg',
-    youtube: 'https://www.youtube.com/embed/iv-1PMbVI78',
+    youtube: 'http://www.youtube.com/watch?v=iv-1PMbVI78',
     text:
       '분노의 질주 시리즈의 첫 스핀오프 영화이며, 데커드 쇼와 루크 홉스의 팀업 영화이다.'
   },

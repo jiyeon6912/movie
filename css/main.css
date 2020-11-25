@@ -471,16 +471,21 @@ h4 {
 } */
 
 /* event_box */
-/* .event_box {
-  margin-top: 60px;
-  height: 500px;
-  background: var(--dark_blue);
-  padding-top: 10px;
-} */
+.event_box {
+}
+
+.event_box img {
+  transition: all 0.7s;
+}
+
+.event_box:hover img {
+  opacity: 0.5;
+}
 
 .event_inner {
   background: var(--dark_blue);
 }
+
 .event_box img {
   height: 300px;
   /* height: 30vh; */
