@@ -7,22 +7,8 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/event.css">
   <title>Event-Movie&music</title>
-
-  <style>
-    .event_detail {
-    margin-bottom: 200px;
-    }
-
-    h4 {
-      padding: initial;
-      text-align: center;
-      margin: 100px 0;
-      font-size: 30px;
-    }
-
-  </style>
-
 </head>
 
 <body>
@@ -40,11 +26,36 @@
        <div class="container">
         <h4>이달의 이벤트</h4>
         <img src="./images/home/event_2.jpg" alt="이벤트 이미지">
-       </div>
-       </div>
+
+        <div class="countdown_box">
+          <p>이벤트 응모마감일은 <span id="last_day">2020년</span>입니다!^^</p> 
+           <div id="countdown">
+    
+             <div>
+               <h3>00</h3>
+               <p>일</p>
+             </div>
+    
+             <div>
+              <h3>00</h3>
+              <p>시</p>
+            </div>
+            
+            <div>
+              <h3>00</h3>
+              <p>분</p>
+            </div>
+            
+            <div>
+              <h3>00</h3>
+              <p>초</p>
+            </div>
+            
+           </div>
+        </div>
+       </div>  <!-- container end -->
+    </div>  <!-- event_detail end -->
      
-      
- 
 
       <div class="footer">
         <div class="container">
@@ -82,5 +93,6 @@
         $('html, body').animate({ scrollTop: 0 }, 400)
       })
   </script>
+  <script src="./js/event.js"></script>
 </body>
 </html>
