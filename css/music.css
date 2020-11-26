@@ -38,11 +38,19 @@
   color: #20b477;
 }
 
-.list_item {
+/* .list_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+} */
+
+.list_item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-columns: repeat(4, 1fr); 1행에 2개의 item 반복하기 */
+  /* grid-template-rows: 282px; 반응형으로 코드하기위해 row를 지정하지 않음*/
+  gap: 18px;
 }
 
 .list_item img {

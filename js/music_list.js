@@ -33,12 +33,12 @@ const musicList = [
   },
   {
     id: 4,
-    title: '언어의정원',
+    title: '날씨의아이',
     director: '신카이 마코토',
     dataitem: 'ani',
     music: 'Rain - 秦基博(Motohiro Hata)',
     poster: './images/home/nail-1.jpg',
-    youtube: 'http://www.youtube.com/watch?v=eW0Glxi30C0',
+    youtube: 'http://www.youtube.com/watch?v=eNMiwMuw-yo',
     text:
       '영화는 구두장이를 꿈꾸는 15세의 아키즈키 타카오와 27세의 여인 유키노 유카리가 비 오는 아침마다 신주쿠 공원에서 이어가는 만남을 그린다. 타카오는 구두 디자인을 하기 위해 등교를 늦게 하고 유키노는 직장에서의 개인적 문제 때문에 일을 나가지 않는다.'
   },
