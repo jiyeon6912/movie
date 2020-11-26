@@ -89,9 +89,9 @@ const musicList = [
 {
     id: 9,
     title: '중경삼림',
-    director: '데이비드 리치',
+    director: '왕가위',
     dataitem: 'movie',
-    music: 'Time in a bottle - YUNGBLUD ',
+    music: 'California Dreamin',
     poster: './images/home/nail-3.jpg',
     youtube: 'http://www.youtube.com/watch?v=dV-N5ZOzblY',
     text:
