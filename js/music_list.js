@@ -88,12 +88,12 @@ const musicList = [
   },
 {
     id: 9,
-    title: '분노의 질주:홉스앤쇼',
+    title: '중경삼림',
     director: '데이비드 리치',
     dataitem: 'movie',
     music: 'Time in a bottle - YUNGBLUD ',
     poster: './images/home/nail-3.jpg',
-    youtube: 'http://www.youtube.com/watch?v=JVVpuZq9jlc',
+    youtube: 'http://www.youtube.com/watch?v=dV-N5ZOzblY',
     text:
       '분노의 질주 시리즈의 첫 스핀오프 영화이며  데커드 쇼와 루크 홉스의 팀업 영화이다.'
   }
